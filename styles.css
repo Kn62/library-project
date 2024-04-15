@@ -4,3 +4,113 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+body {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    min-height: 170px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+main { 
+    display: flex;
+    height: calc(100vh - 170px);
+}
+
+.add-book-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.book-form {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 30px;
+    gap: 10px;
+    color: white;
+}
+
+.book-form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.book-display {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    width: 100%;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    gap: 30px;
+    overflow: auto;
+    height: 90%;
+    justify-content: center;
+}
+
+.test {
+    outline: 1px solid red;
+    height: calc(100vh  - 170px) ;
+    overflow-y: hidden;
+    padding-bottom: 60px;
+}
+
+.book-container::-webkit-scrollbar {
+    display: none;
+}
+
+.div-book {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: fit-content;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.mark-read {
+
+}
+
+.delete-button {
+    padding: 8px;
+}
+
+h1 {
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-size: 60px;
+}
