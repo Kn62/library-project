@@ -101,9 +101,21 @@ button {
     border-radius: 25px;
 }
 
-.mark-read {
-
+.display-read{
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
 }
+
+.green{
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+
 
 .delete-button {
     padding: 8px;
