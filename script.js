@@ -7,10 +7,6 @@ const Book = function(title, author, pages, read) {
 
 Book.prototype.toggleRead = function () {
     this.read = !this.read;
-    console.log(this.title)
-    console.log(this.author)
-    console.log(this.pages)
-    console.log(this.read)
 }
 
 // Array to hold the books
