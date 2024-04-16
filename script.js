@@ -41,6 +41,7 @@ const displayBooks = function() {
         const newRead = document.createElement("p");
         newRead.setAttribute("class", "display-read")
         newRead.textContent = `${book.read ? "Already read" : "Not yet read"}`
+        newRead.classList = `${book.read ? "green red" : "red"}`
         newDivBook.appendChild(newRead);
 
         const readButton = document.createElement("button");
