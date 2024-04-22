@@ -1,20 +1,17 @@
-const Book = function(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-}
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 
-Book.prototype.toggleRead = function () {
-    this.read = !this.read;
+    get toggleRead() {
+        this.read = !this.read
+    }
 }
-
-// Array to hold the books
 
 let myLibrary = [];
-
-// Create a book
-
 
 const displayBooks = function() {
     const bookContainer = document.querySelector('.book-container');
@@ -48,7 +45,7 @@ const displayBooks = function() {
         readButton.setAttribute("class", "mark-read");
         readButton.innerText = "Change Read Status";
         readButton.addEventListener("click", () => {
-            book.toggleRead();
+            book.toggleRead;
             newRead.innerText = `${book.read ? "Already read" : "Not yet read"}`
             newRead.classList.toggle("green")
             })
